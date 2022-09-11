@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <title>Mr._Robogers_Neighborhood</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
-  <title>Mr._Robogers_Neighborhood</title>
 </head>
-
 <body>
-  <form id="numberForm">
-    <label for="number">Enter a number between 1 and 100 for a fun story!:</label>
+  <div class="container">
     <br>
-    <input id="number" type="number" min="1" max="100">
-    <br> 
-    <button type="submit" id="Submit">Show me the story!</button>
-    <button type="submit" id="Redo">Show me a new story!</button>
-  </form>
-  <span id="results">
-    <p></p>
-  </span>
+    <h2>Mr. Roboger's Neighborhood</h2>
+    <form id="userInput">
+      <div class="form-group">
+        <p>Enter a number between zero(0) and 100(one-hundred):</p>
+        <input type="number" id="inputNumber" name="inputNumber" class="form-control">
+        <br>
+        <button type="submit" id="submitBtn" hidden="hidden">Go!</button>
+        <br>
+        <input type="reset" id="resetBtn" value ="Redo!" class="hidden" >
+      </div>
+    </form>
+    <p><span id="outputList"></span></p>
+  </div>
+  <img id="noiceGif" src="img/noice.html" alt="nice!">
 </body>
+</html>
