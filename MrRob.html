@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Mr._Robogers_Neighborhood</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
+  <title>Mr._Robogers_Neighborhood</title>
 </head>
 
 <body>
-  <form id="User Input">
-    <label for="UserInput">Enter a number between 1 and 100:</label>
+  <form id="numberForm">
+    <label for="number">Enter a number between 1 and 100 for a fun story!:</label>
     <br>
-    <input id="UserInput" type="number" min="1" max="100">
+    <input id="number" type="number" min="1" max="100">
     <br> 
-    <button type="submit" id="submit">Submit</button>
+    <button type="submit" id="Submit">Show me the story!</button>
+    <button type="submit" id="Redo">Show me a new story!</button>
   </form>
-  </form>
+  <span id="results">
+    <p></p>
+  </span>
 </body>
